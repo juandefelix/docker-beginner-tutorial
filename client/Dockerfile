@@ -1,5 +1,3 @@
-# This file was created following this tutorial: https://medium.com/@jharvey1012/a-beginners-guide-to-creating-a-containerized-web-application-development-environment-with-docker-e903169004ff
-
 FROM alpine:latest
 
 RUN apk update
