@@ -24,3 +24,13 @@ There are a couple of items in this tutorial that are not up to date:
   /# exit
 
   ```
+
+## Run the containers
+In your terminal, navigate to `/myapp` and run `docker-compose up`. The servers will be available at `localhost:80` (client) and `localhost:8000` (server)
+
+To run the containers individually, navigate to each folder and run the container:
+
+```
+  $ docker run -p 80:3000 --mount src=client,target=/var/www myclient:latest cd app; npm start
+  $ docker run -p 8000:8000 --mount src=server,target=/var/www myserver:latest
+```
